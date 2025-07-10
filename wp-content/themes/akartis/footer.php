@@ -20,7 +20,9 @@
                         </div>
                     </div>
                 </section>
+                <?php do_action('akartis_footer_copyright'); ?>
             </footer>
+            <?php do_action('akartis_scroll_to_top'); ?>
             <?php wp_footer(); ?>
         </div>
     </body>

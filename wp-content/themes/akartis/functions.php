@@ -6,5 +6,6 @@ error_reporting(E_ALL);
 
     // Configuration du thème
     require_once get_template_directory() . '/inc/enqueue.php';
+    require_once get_template_directory() . '/inc/includes.php';
 	require_once get_template_directory() . '/inc/config/theme-setup.php';
     require_once get_template_directory() . '/inc/config/menu-config.php';
