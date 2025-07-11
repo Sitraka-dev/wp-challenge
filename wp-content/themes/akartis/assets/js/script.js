@@ -16,7 +16,7 @@ jQuery(function($) {
 	});
 
 	// menu sticky on scroll
-	var trigger = $(window).height() / 3; // 100vh
+	var trigger = $(window).height(); // 100vh
     $(window).on('scroll', function () {
       if ($(window).scrollTop() >= trigger) {
         $('#main-header').addClass('sticky');

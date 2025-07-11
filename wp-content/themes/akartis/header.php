@@ -19,10 +19,10 @@
                     <div class="hero-content">
                         <div class="hero-text">
                             <h1 class="hero-title">
-                                <?php echo get_theme_mod('hero_title', 'Bienvenue sur notre site'); ?>
+                                <?php echo get_theme_mod('hero_title', 'Sitraka Nomenjahahary'); ?>
                             </h1>
                             <p class="hero-subtitle">
-                                <?php echo get_theme_mod('hero_subtitle', 'Découvrez notre univers et nos services exceptionnels'); ?>
+                                <?php echo get_theme_mod('hero_subtitle', 'Développeur et intégrateur Web'); ?>
                             </p>
                             <div class="hero-buttons">
                                 <a href="<?php echo get_theme_mod('hero_primary_btn_url', '#services'); ?>" class="btn btn-primary">
@@ -32,13 +32,6 @@
                                     <?php echo get_theme_mod('hero_secondary_btn_text', 'En Savoir Plus'); ?>
                                 </a>
                             </div>
-                        </div>
-                        <div class="hero-image">
-                            <?php 
-                            $hero_image = get_theme_mod('hero_image');
-                            if ($hero_image) : ?>
-                                <img src="<?php echo esc_url($hero_image); ?>" alt="Hero Image" class="hero-img">
-                            <?php endif; ?>
                         </div>
                     </div>
                 </div>

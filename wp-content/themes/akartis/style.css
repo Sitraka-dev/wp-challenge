@@ -19,13 +19,18 @@ h1, h2 {
 
 header {
     position: relative;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    background-image: url(assets/images/workstation-banner.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
     min-height: 100vh;
 }
 /* Hero Section */
 .hero-section {
     color: white;
-    padding-top: 20vh;
+    padding-top: 25vh;
     display: flex;
     align-items: center;
 }
@@ -113,13 +118,13 @@ li.menu-item {
 
 .hero-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 20%;
     padding: 0 20px;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 60px;
     align-items: center;
 }
@@ -127,7 +132,6 @@ li.menu-item {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
     line-height: 1.2;
 }
 
