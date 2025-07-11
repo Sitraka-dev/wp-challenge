@@ -19,7 +19,7 @@
                     <div class="hero-content">
                         <div class="hero-text">
                             <h1 class="hero-title">
-                                <?php echo get_theme_mod('hero_title', 'Bienvenue sur Notre Site'); ?>
+                                <?php echo get_theme_mod('hero_title', 'Bienvenue sur notre site'); ?>
                             </h1>
                             <p class="hero-subtitle">
                                 <?php echo get_theme_mod('hero_subtitle', 'Découvrez notre univers et nos services exceptionnels'); ?>
@@ -44,8 +44,12 @@
                 </div>
             </section>
             
-            <nav class="nav-menu">
-                <div class="container-fluid">
+            <nav class="nav-menu" id="main-header">
+                <div class="container-fluid header-container">
+
+                    <div class="nav-logo">
+                        <a href="<?= home_url(); ?>" class="nav-link">LOGO</a>
+                    </div>
 
                     <div class="nav-menu-content">
                         <?php 
@@ -53,12 +57,15 @@
                                 array(
                                     'theme_location'      => is_user_logged_in() ? 'primary' : 'primary',
                                     'container'             => false,
-                                    'menu_class'            => 'nnav-menu-item'
+                                    'menu_class'            => 'nav-menu-item'
                                 )
                             );  
                         ?>
-
                         <?php //echo get_search_form(); ?>
+                    </div>
+
+                    <div class="nav-menu-item contatc-us">
+                        <a href="#contact-us" class="nav-link">CONTACT</a>
                     </div>
                 </div>
             </nav>

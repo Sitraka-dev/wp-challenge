@@ -1,10 +1,10 @@
             <footer>
                 <!-- CTA Section -->
-                <section class="cta-section">
+                <section class="cta-section" id="contact-us">
                     <div class="container">
                         <div class="cta-content">
                             <h2 class="cta-title">
-                                <?php echo get_theme_mod('cta_title', 'Prêt à Commencer Votre Projet ?'); ?>
+                                <?php echo get_theme_mod('cta_title', 'Prêt à commencer votre projet ?'); ?>
                             </h2>
                             <p class="cta-description">
                                 <?php echo get_theme_mod('cta_description', 'Contactez-nous dès aujourd\'hui pour discuter de vos besoins et obtenir un devis personnalisé.'); ?>
