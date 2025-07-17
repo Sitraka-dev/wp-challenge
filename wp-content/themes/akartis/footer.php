@@ -4,18 +4,26 @@
                     <div class="container">
                         <div class="cta-content">
                             <h2 class="cta-title">
-                                <?php echo get_theme_mod('cta_title', 'Prêt à commencer votre projet ?'); ?>
+                                <?php echo _e('Prêt à commencer votre projet ?', 'akartis'); ?>
                             </h2>
                             <p class="cta-description">
-                                <?php echo get_theme_mod('cta_description', 'Contactez-nous dès aujourd\'hui pour discuter de vos besoins et obtenir un devis personnalisé.'); ?>
+                                <?php echo _e('Contactez-moi dès maintenant pour discuter de votre projet et obtenir un devis personnalisé.', 'akartis'); ?>
                             </p>
                             <div class="cta-buttons">
-                                <a href="<?php echo get_theme_mod('cta_primary_btn_url', '/contact'); ?>" class="btn btn-primary btn-large">
-                                    <?php echo get_theme_mod('cta_primary_btn_text', 'Nous Contacter'); ?>
-                                </a>
-                                <a href="<?php echo get_theme_mod('cta_secondary_btn_url', '/portfolio'); ?>" class="btn btn-outline btn-large">
-                                    <?php echo get_theme_mod('cta_secondary_btn_text', 'Voir Notre Portfolio'); ?>
-                                </a>
+                                <ul class="social-links">
+                                    <li style="--i:#56CCF2;--j:#2F80ED">
+                                        <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                                        <span class="title">Email</span>
+                                    </li>
+                                    <li style="--i:#a955ff;--j:#ea51ff">
+                                        <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                                        <span class="title">Linkedin</span>
+                                    </li>
+                                    <li style="--i:#FF9966;--j:#FF5E62">
+                                        <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                        <span class="title">Whatsapp</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

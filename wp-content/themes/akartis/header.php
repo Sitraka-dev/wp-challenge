@@ -12,24 +12,25 @@
     <?php wp_body_open(); ?>
     <div>
         <header>
-
-            <!-- Hero Section -->
-            <section class="hero-section">
-                <div class="hero-container">
-                    <div class="hero-content">
-                        <div class="hero-text">
-                            <h1 class="hero-title">
-                                <?php echo get_theme_mod('hero_title', 'Sitraka Nomenjahahary'); ?>
+            <!-- banner Section -->
+            <section class="banner-section">
+                <div class="banner-container">
+                    <div class="banner-content">
+                        <div class="banner-text">
+                            <h1 class="banner-title">
+                                <?php _e('Sitraka Nomenjanahary', 'akartis'); ?>
                             </h1>
-                            <p class="hero-subtitle">
-                                <?php echo get_theme_mod('hero_subtitle', 'Développeur et intégrateur Web'); ?>
+                            <p class="banner-subtitle">
+                                <?php _e('Développeur et intégrateur Web', 'akartis'); ?>
                             </p>
-                            <div class="hero-buttons">
-                                <a href="<?php echo get_theme_mod('hero_primary_btn_url', '#services'); ?>" class="btn btn-primary">
-                                    <?php echo get_theme_mod('hero_primary_btn_text', 'Nos Services'); ?>
-                                </a>
-                                <a href="<?php echo get_theme_mod('hero_secondary_btn_url', '#about'); ?>" class="btn btn-secondary">
-                                    <?php echo get_theme_mod('hero_secondary_btn_text', 'En Savoir Plus'); ?>
+                            <div class="line"></div>
+                            <p class="banner-exerpt">
+                                <?php _e('Spécialisé WordPress, je développe des sites web performants </br>
+                                qui boostent votre présence en ligne et génèrent des résultats concrets pour votre business.', 'akartis'); ?>
+                            </p>
+                            <div class="banner-buttons">
+                                <a href="<?php echo home_url() . '/#services'; ?>" class="btn btn-more">
+                                    <?php _e('En savoir plus', 'akartis'); ?>
                                 </a>
                             </div>
                         </div>
@@ -41,7 +42,7 @@
                 <div class="container-fluid header-container">
 
                     <div class="nav-logo">
-                        <a href="<?= home_url(); ?>" class="nav-link">LOGO</a>
+                        <a href="<?= home_url(); ?>" class="nav-links" data-replace="Akartis."><span>Akartis.</span></a>
                     </div>
 
                     <div class="nav-menu-content">
@@ -57,7 +58,7 @@
                         <?php //echo get_search_form(); ?>
                     </div>
 
-                    <div class="nav-menu-item contatc-us">
+                    <div class="nav-menu-item contact-us">
                         <a href="#contact-us" class="nav-link">CONTACT</a>
                     </div>
                 </div>
