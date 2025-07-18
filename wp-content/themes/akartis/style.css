@@ -429,14 +429,14 @@ p.banner-exerpt {
 }
 
 .btn-outline {
-    background: transparent;
-    color: #333;
-    border: 2px solid #333;
+    background: #333;
+    color: white;
 }
 
 .btn-outline:hover {
-    background: #333;
-    color: white;
+    background: transparent;
+    color: #333;
+    border: 2px solid #333;
 }
 
 /* Testimonials Section */
