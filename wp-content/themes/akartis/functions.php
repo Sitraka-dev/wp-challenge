@@ -11,3 +11,5 @@ error_reporting(E_ALL);
     require_once get_template_directory() . '/inc/config/menu-config.php';
     require_once get_template_directory() . '/inc/config/services-cpt.php';
     require_once get_template_directory() . '/inc/config/services-metaboxes.php';
+    // require_once get_template_directory() . '/inc/config/password-rules.php';
+    // require_once get_template_directory() . '/inc/config/password-rules-2.php';

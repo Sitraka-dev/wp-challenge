@@ -21,7 +21,7 @@
                                 <?php _e('Sitraka Nomenjanahary', 'akartis'); ?>
                             </h1>
                             <p class="banner-subtitle">
-                                <?php _e('Développeur et intégrateur Web', 'akartis'); ?>
+                                <?php _e('Développeur full stack WordPress', 'akartis'); ?>
                             </p>
                             <div class="line"></div>
                             <p class="banner-exerpt">
