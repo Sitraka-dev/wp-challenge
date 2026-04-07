@@ -18,7 +18,7 @@
         $html = '';
         $html .= '<section class="footer-copyright">';
         $html .= '<div class="container">';
-        $html .= '<p>Copyright &copy; ' . $year . ' AKARTiS. All rights reserved.</p>';
+        $html .= '<p>Copyright &copy; ' . $year . ' ' .get_bloginfo( "name" ) . ' All rights reserved.</p>';
         $html .= '</div>';
         $html .= '</section>';
 

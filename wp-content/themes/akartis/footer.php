@@ -28,6 +28,8 @@
                         </div>
                     </div>
                 </section>
+                <section class="footer-details">
+                </section>
                 <?php do_action('akartis_footer_copyright'); ?>
             </footer>
             <?php do_action('akartis_scroll_to_top'); ?>

@@ -18,15 +18,14 @@
                     <div class="banner-content">
                         <div class="banner-text">
                             <h1 class="banner-title">
-                                <?php _e('Sitraka Nomenjanahary', 'akartis'); ?>
+                                <?= get_theme_mod( 'prestataire_nom' ) ? get_theme_mod( 'prestataire_nom' ) : 'John Doe'; ?>
                             </h1>
                             <p class="banner-subtitle">
-                                <?php _e('Développeur full stack WordPress', 'akartis'); ?>
+                                <?= get_theme_mod( 'prestataire_prestation' ) ? get_theme_mod( 'prestataire_prestation' ) : 'Designer'; ?>
                             </p>
                             <div class="line"></div>
                             <p class="banner-exerpt">
-                                <?php _e('Spécialisé WordPress, je développe des sites web performants </br>
-                                qui boostent votre présence en ligne et génèrent des résultats concrets pour votre business.', 'akartis'); ?>
+                                <?= get_theme_mod( 'prestataire_description' ) ? get_theme_mod( 'prestataire_description' ) : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'; ?>
                             </p>
                             <div class="banner-buttons">
                                 <a href="<?php echo home_url() . '/#services'; ?>" class="btn btn-more">
@@ -42,7 +41,7 @@
                 <div class="container-fluid header-container">
 
                     <div class="nav-logo">
-                        <a href="<?= home_url(); ?>" class="nav-links" data-replace="Akartis."><span>Akartis.</span></a>
+                        <a href="<?= home_url(); ?>" class="nav-links" data-replace="<?= bloginfo( 'name' ); ?>"><span><?= bloginfo( 'name' ); ?></span></a>
                     </div>
 
                     <div class="nav-menu-content">
@@ -55,11 +54,10 @@
                                 )
                             );  
                         ?>
-                        <?php //echo get_search_form(); ?>
                     </div>
 
                     <div class="nav-menu-item contact-us">
-                        <a href="#contact-us" class="nav-link">CONTACT</a>
+                        <a href="#contact-us" class="nav-link"><?php _e('Contactez-nous', 'akartis'); ?></a>
                     </div>
                 </div>
             </nav>

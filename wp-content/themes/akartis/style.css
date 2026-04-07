@@ -10,17 +10,31 @@ Text Domaine: akartis
 */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1F2933;
+    font-weight: 400;
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 header {
     position: relative;
     /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    background-image: url(assets/images/workstation-banner.jpg);
+    background-image: url(assets/images/hero-banner.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -46,7 +60,7 @@ header {
 
 .nav-menu.sticky {
     position: fixed;
-    background-color: #333333;
+    background-color: #111827;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -143,12 +157,12 @@ li.menu-item {
 .nav-menu-item.contact-us a.nav-link {
     justify-self: right;
     font-size: 15px;
-    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     background-color: #fff;
     border-color: #fff;
-    color: #000;
-    border: 2px solid transparent;
-    border-radius: 100px;
+    color: #1F2933;
+    border: 1px solid transparent;
     padding: 8px 22px;
 }
 
@@ -206,20 +220,20 @@ p.banner-exerpt {
 
 .btn {
     padding: 15px 30px;
-    border-radius: 50px;
+    border-radius: inherit;
     text-decoration: none;
-    font-weight: 600;
+    text-transform: uppercase;
     transition: all 0.3s ease;
     display: inline-block;
     text-align: center;
-    border: 2px solid transparent;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
 }
 
 .btn-more {
     background: transparent;
     color: #fff;
     border-color: #fff;
-    text-transform: uppercase;
 }
 
 .btn-more:hover, .btn-more:active {
@@ -255,13 +269,13 @@ p.banner-exerpt {
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #1F2933;
     margin-bottom: 15px;
 }
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #333;
+    color: #1F2933;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -295,11 +309,11 @@ p.banner-exerpt {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #333;
+    color: #1F2933;
 }
 
 .service-description {
-    color: #666;
+    color: #1F2933;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -325,13 +339,13 @@ p.banner-exerpt {
 .about-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #1F2933;
     margin-bottom: 20px;
 }
 
 .about-description {
     font-size: 1.1rem;
-    color: #666;
+    color: #1F2933;
     line-height: 1.8;
     margin-bottom: 40px;
 }
@@ -354,7 +368,7 @@ p.banner-exerpt {
 
 .stat-label {
     font-size: 0.9rem;
-    color: #666;
+    color: #1F2933;
 }
 
 .about-img {
@@ -403,17 +417,17 @@ p.banner-exerpt {
     justify-content: space-between;
     margin-bottom: 15px;
     font-size: 0.9rem;
-    color: #666;
+    color: #1F2933;
 }
 
 .blog-title a {
-    color: #333;
+    color: #191b1c;
     text-decoration: none;
     font-weight: 600;
 }
 
 .blog-excerpt {
-    color: #666;
+    color: #1F2933;
     line-height: 1.6;
     margin: 15px 0;
 }
@@ -429,14 +443,15 @@ p.banner-exerpt {
 }
 
 .btn-outline {
-    background: #333;
+    background: #C9A24D;
     color: white;
+    border: 2px solid transparent;
 }
 
 .btn-outline:hover {
     background: transparent;
-    color: #333;
-    border: 2px solid #333;
+    color: #111827;
+    border: 2px solid #111827;
 }
 
 /* Testimonials Section */
@@ -516,13 +531,12 @@ p.banner-exerpt {
 }
 
 .scroll-to-top .scroll-to-top-btn {
-  border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-color: #333;
+  background-color: #C9A24D;
   min-width: inherit;
-  border: 1px solid #333;
+  border: 2px solid #fff;
   color: white;
   font-size: 20px;
   box-shadow: 0 3px 19px rgba(0, 0, 0, 0.18), 0 6px 5px rgba(0, 0, 0, 0.08);
@@ -534,9 +548,9 @@ p.banner-exerpt {
 }
 
 .scroll-to-top .scroll-to-top-btn:hover {
-  background-color: #fff;
-  color: #333;
-  border-color: #333;
+  background-color: #111827;
+  color: #fff;
+  border-color: #fff;
 }
 
 @keyframes float-and-slide {
@@ -558,7 +572,7 @@ p.banner-exerpt {
 }
 
 section.footer-copyright {
-    background: #667eea;
+    background: #111827;
     color: #fff;
     text-align: center;
 }
