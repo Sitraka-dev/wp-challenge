@@ -12,53 +12,39 @@ get_header(); ?>
     <section id="services" class="services-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Nos Services</h2>
+                <h2 class="section-title"><?php _e('Mes services', 'akartis'); ?></h2>
                 <p class="section-subtitle">Découvrez ce que nous pouvons faire pour vous</p>
             </div>
             <div class="services-grid">
                 <?php
-                // Récupération des services depuis les options du thème
-                $services = get_theme_mod('services_list', array());
-                if (!empty($services)) :
-                    foreach ($services as $service) : ?>
+
+                $all_services = get_posts( [
+                    'post_type'   => 'services',
+                    'post_status' => 'publish',
+                    'numberposts' => -1,
+                    'orderby'     => 'date',
+                    'order'       => 'ASC',
+                ] );
+
+                if (!empty($all_services)) :
+                    foreach ($all_services as $service) : ?>
+
+                        <?php
+                            setup_postdata($service);
+                            $service_fontawesome = get_post_meta($service->ID, '_service_fontawesome', true) ? get_post_meta($service->ID, '_service_fontawesome', true) : '';
+                        ?>
+                        
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="<?php echo esc_attr($service['icon']); ?>"></i>
+                                <i class="fas <?php echo esc_attr($service_fontawesome); ?>"></i>
                             </div>
-                            <h3 class="service-title"><?php echo esc_html($service['title']); ?></h3>
-                            <p class="service-description"><?php echo esc_html($service['description']); ?></p>
-                            <?php if (!empty($service['link'])) : ?>
-                                <a href="<?php echo esc_url($service['link']); ?>" class="service-link">En savoir plus</a>
-                            <?php endif; ?>
+                            <h3 class="service-title"><?php echo $service->post_title; ?></h3>
+                            <p class="service-description"><?php echo $service->post_excerpt; ?></p>
+                            <a href="<?php echo get_permalink($service->ID); ?>" class="service-link">En savoir plus</a>
                         </div>
-                    <?php endforeach;
-                else :
-                    // Services par défaut si aucun n'est configuré
-                    $default_services = array(
-                        array(
-                            'icon' => 'fas fa-laptop-code',
-                            'title' => 'Développement Web',
-                            'description' => 'Création de sites web modernes et performants'
-                        ),
-                        array(
-                            'icon' => 'fas fa-mobile-alt',
-                            'title' => 'Design Responsive',
-                            'description' => 'Interfaces adaptées à tous les appareils'
-                        ),
-                        array(
-                            'icon' => 'fas fa-rocket',
-                            'title' => 'Performance',
-                            'description' => 'Optimisation pour la vitesse et le SEO'
-                        )
-                    );
-                    foreach ($default_services as $service) : ?>
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="<?php echo esc_attr($service['icon']); ?>"></i>
-                            </div>
-                            <h3 class="service-title"><?php echo esc_html($service['title']); ?></h3>
-                            <p class="service-description"><?php echo esc_html($service['description']); ?></p>
-                        </div>
+
+                        <?php wp_reset_postdata(); ?>
+
                     <?php endforeach;
                 endif; ?>
             </div>
@@ -106,7 +92,7 @@ get_header(); ?>
     <section class="blog-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Derniers Articles</h2>
+                <h2 class="section-title">Derniers articles</h2>
                 <p class="section-subtitle">Restez informé avec nos dernières publications</p>
             </div>
             <div class="blog-grid">
@@ -159,7 +145,7 @@ get_header(); ?>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <section class="testimonials-section" style="display: none;">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Témoignages</h2>
@@ -211,6 +197,13 @@ get_header(); ?>
                     <?php endforeach;
                 endif; ?>
             </div>
+        </div>
+    </section>
+    
+    <!-- Skill Section -->
+    <section>
+        <div class="container">
+            
         </div>
     </section>
 </main>
