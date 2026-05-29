@@ -41,7 +41,9 @@
                 <div class="container-fluid header-container">
 
                     <div class="nav-logo">
-                        <a href="<?= home_url(); ?>" class="nav-links" data-replace="<?= bloginfo( 'name' ); ?>"><span><?= bloginfo( 'name' ); ?></span></a>
+                        <a href="<?= home_url(); ?>" class="nav-links" data-replace="<?= esc_attr( get_bloginfo( 'name' ) ); ?>">
+                            <span><?= esc_html( get_bloginfo( 'name' ) ); ?></span>
+                        </a>
                     </div>
 
                     <div class="nav-menu-content">
@@ -57,7 +59,7 @@
                     </div>
 
                     <div class="nav-menu-item contact-us">
-                        <a href="#contact-us" class="nav-link"><?php _e('Contactez-nous', 'akartis'); ?></a>
+                        <a href="#contact-us" class="nav-link"><?php _e('Me contacter', 'akartis'); ?></a>
                     </div>
                 </div>
             </nav>

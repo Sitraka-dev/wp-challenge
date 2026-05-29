@@ -5,18 +5,14 @@
  */
 add_action( 'customize_register', function( $wp_customize ) {
 
-    /* =========================
-     * SECTION
-     * ========================= */
+    // SECTION
     $wp_customize->add_section( 'prestataire_section', array(
         'title'       => __( 'Prestataire', 'akartis' ),
         'priority'    => 160,
         'description' => __( 'Informations du prestataire', 'akartis' ),
     ) );
 
-    /* =========================
-     * NOM
-     * ========================= */
+    // NOM
     $wp_customize->add_setting( 'prestataire_nom', array(
         'default'           => '',
         'sanitize_callback' => 'sanitize_text_field',
@@ -29,9 +25,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         'type'     => 'text',
     ) );
 
-    /* =========================
-     * PRESTATION
-     * ========================= */
+    // PRESTATION
     $wp_customize->add_setting( 'prestataire_prestation', array(
         'default'           => '',
         'sanitize_callback' => 'sanitize_text_field',
@@ -44,9 +38,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         'type'     => 'text',
     ) );
 
-    /* =========================
-     * DESCRIPTION
-     * ========================= */
+    // DESCRIPTION
     $wp_customize->add_setting( 'prestataire_description', array(
         'default'           => '',
         'sanitize_callback' => 'wp_kses_post',
@@ -59,9 +51,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         'type'     => 'textarea',
     ) );
 
-    /* =========================
-    * BACKGROUND PRESTATAIRE
-    * ========================= */
+    // BACKGROUND PRESTATAIRE
     $wp_customize->add_setting( 'prestataire_background', array(
         'default'           => '',
         'sanitize_callback' => 'absint',
@@ -79,9 +69,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         )
     );
 
-    /* =========================
-    * COULEUR PRINCIPALE
-    * ========================= */
+    // COULEUR PRINCIPALE
     $wp_customize->add_setting( 'prestataire_color_primary', array(
         'default'           => '#2563eb',
         'sanitize_callback' => 'sanitize_hex_color',
@@ -98,9 +86,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         )
     );
 
-    /* =========================
-    * COULEUR SECONDAIRE
-    * ========================= */
+    // COULEUR SECONDAIRE
     $wp_customize->add_setting( 'prestataire_color_secondary', array(
         'default'           => '#0f172a',
         'sanitize_callback' => 'sanitize_hex_color',
@@ -117,9 +103,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         )
     );
 
-    /* =========================
-    * COULEUR D’ACCENT
-    * ========================= */
+    // COULEUR D’ACCENT
     $wp_customize->add_setting( 'prestataire_color_accent', array(
         'default'           => '#22c55e',
         'sanitize_callback' => 'sanitize_hex_color',
@@ -136,9 +120,7 @@ add_action( 'customize_register', function( $wp_customize ) {
         )
     );
 
-    /* =========================
-    * COULEUR TEXTE
-    * ========================= */
+    // COULEUR TEXTE
     $wp_customize->add_setting( 'prestataire_color_text', array(
         'default'           => '#1f2933',
         'sanitize_callback' => 'sanitize_hex_color',
@@ -154,7 +136,4 @@ add_action( 'customize_register', function( $wp_customize ) {
             )
         )
     );
-
-
-
 });

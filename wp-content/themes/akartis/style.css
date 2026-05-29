@@ -9,6 +9,10 @@ Requires PHP: 7.4
 Text Domaine: akartis
 */
 
+/* 
+#101010 #3a3a3d #c9a227 #f3e2b5 #ece9e1
+*/
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -60,7 +64,7 @@ header {
 
 .nav-menu.sticky {
     position: fixed;
-    background-color: #111827;
+    background-color: #101010;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -237,9 +241,9 @@ p.banner-exerpt {
 }
 
 .btn-more:hover, .btn-more:active {
-    color: #000;
+    color: #101010;
     background-color: #fff;
-    border-color: #000;
+    border-color: #101010;
 }
 
 .banner-img {
@@ -443,15 +447,15 @@ p.banner-exerpt {
 }
 
 .btn-outline {
-    background: #C9A24D;
+    background: #C9A227;
     color: white;
     border: 2px solid transparent;
 }
 
 .btn-outline:hover {
     background: transparent;
-    color: #111827;
-    border: 2px solid #111827;
+    color: #101010;
+    border: 2px solid #101010;
 }
 
 /* Testimonials Section */
@@ -534,7 +538,7 @@ p.banner-exerpt {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-color: #C9A24D;
+  background-color: #C9A227;
   min-width: inherit;
   border: 2px solid #fff;
   color: white;
@@ -548,7 +552,7 @@ p.banner-exerpt {
 }
 
 .scroll-to-top .scroll-to-top-btn:hover {
-  background-color: #111827;
+  background-color: #101010;
   color: #fff;
   border-color: #fff;
 }
@@ -572,7 +576,7 @@ p.banner-exerpt {
 }
 
 section.footer-copyright {
-    background: #111827;
+    background: #101010;
     color: #fff;
     text-align: center;
 }
@@ -610,7 +614,7 @@ ul.social-links li::before {
     position: absolute;
     inset: 0;
     border-radius: 60px;
-    background: linear-gradient(45deg, #333, #000);
+    background: linear-gradient(45deg, #333, #101010);
     opacity: 0;
     transition: 0.5s;
 }
@@ -622,7 +626,7 @@ ul.social-links li::after {
     width: 100%;
     height: 100%;
     border-radius: 60px;
-    background: linear-gradient(45deg, #333, #000);
+    background: linear-gradient(45deg, #333, #101010);
     transition: 0.5s;
     filter: blur(15px);
     z-index: -1;
@@ -672,6 +676,31 @@ ul.social-links li .title {
 ul.social-links li:hover .title {
     transform: scale(1);
     transition-delay: 0.25s;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 30px 24px;
+}
+
+.footer-details {
+    background: #101010;
+    color: #fff;
+}
+
+p.footer-exerpt {
+    margin: 0;
+}
+
+ul.footer-menu-item {
+    list-style-type: square;
+    margin: 0;
+}
+
+ul.footer-menu-item li::marker {
+    color: #f9c801;
+    font-size: 22px;
 }
 
 /* Responsive Design */
